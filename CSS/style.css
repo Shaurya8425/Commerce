@@ -1,0 +1,266 @@
+/* css reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* css variables */
+:root {
+    --navbar--height: 60px;
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    /* top: 0px; */
+}
+
+/* logo & images */
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    margin: -6px -24px;
+    /* filter: invert(100%); */
+    border: 4px solid orangered;
+    border-radius: 10px;
+}
+
+/* list styling */
+#navbar ul {
+    display: flex;
+    font-size: 1.2em;
+    font-family: 'Ubuntu';
+}
+
+#navbar::before {
+    content: "";
+    background-color: grey;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2em;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 2px 24px;
+    border-radius: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    color: orangered;
+    background-color: white;
+    /* font-size: 1.12em; */
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+    justify-content: center;
+    align-items: center;
+    height: 556px;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif';
+}
+
+#home p {
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Bree Serif';
+}
+
+#home::before {
+    content: "";
+    background: url('../food1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .86;
+}
+
+/* services */
+.services-container {
+    /* background-color: wheat; */
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 2rem;
+    height: 100%;
+    width: 100%;
+    /* background: url('../wood.jpg') no-repeat center center/cover; */
+}
+
+#services {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+#services .box {
+    border: 2px solid brown;
+    background-color: #e7c792;
+    border-radius: 24px;
+    /* margin-top: 12px; */
+    padding: 8px 0px;
+    /* margin: 2px; */
+    text-align: justify;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    border: 4px solid #684932;
+    border-radius: 10px;
+}
+#services .box p{
+    margin: .5rem 2rem;
+    text-align: justify;
+}
+#img1 {
+    width: 80%;
+}
+
+#img2 {
+    width: 80%;
+}
+#img3 {
+    width: 80%;
+}
+
+/* utility class */
+.h-primary {
+    font-size: 3.4rem;
+    font-family: 'Bree Serif';
+    text-align: center;
+}
+.h-secondary {
+    font-size: 2.4rem;
+    font-family: 'Bree Serif';
+}
+
+.button {
+    padding: 6px 18px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 16px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    /* font-size: 1.46em; */
+    background-color: rgba(165, 42, 42, 0.534);
+    color: orangered;
+}
+#client-section{
+    height: 100%;
+    padding: auto;
+
+
+}
+#clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../salad.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+    /* border: 1px solid white; */
+    /* border-radius: 24px; */
+}
+#clients img{
+    height: 112px;
+}
+#contact{
+    position: relative;
+    margin-top: 8rem;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    /* height: 172%; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    padding: 0px 0px 52px 0px;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+#contact-box form{
+    width: 40%;
+    opacity: 0.74;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Bree Serif';
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+#contact-box textarea{
+    border: 2px solid black;
+}
+footer{
+    background: rgba(0, 0, 0, 0.774);
+    color: white;
+    margin: 52px 0px 0px 0px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#privacy-policy{
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 1.2px 2px;
+    text-decoration: none;
+    color: tomato;
+}
+#privacy-policy:hover{
+    color: yellow;
+    background-color: rgba(0, 0, 255, 0.548);
+}
