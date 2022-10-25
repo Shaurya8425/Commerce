@@ -252,11 +252,17 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+footer p{
+    margin-bottom: .5rem;
 }
 #privacy-policy{
     border: 2px solid red;
     border-radius: 12px;
-    padding: 1.2px 2px;
+    padding: 0px 4px;
+    padding-bottom: 2px;
+    padding-left: 6px;
     text-decoration: none;
     color: tomato;
 }
